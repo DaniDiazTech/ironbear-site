@@ -1,0 +1,66 @@
+/* Iron Bear — design tokens (ported from ironbear/design/ironbear/_shared/styles.css) */
+
+:root {
+  /* Brand */
+  --ib-primary:        #F59221;
+  --ib-primary-2:      #FFA940;
+  --ib-primary-ink:    #1A1005;
+  --ib-primary-soft:   rgba(245,146,33,0.12);
+  --ib-primary-softer: rgba(245,146,33,0.05);
+  --ib-primary-border: rgba(245,146,33,0.28);
+  --ib-shadow-brand:   0 10px 30px -8px rgba(245,146,33,0.35);
+  --ib-navy:    #1E2A3A;
+  --ib-navy-2:  #2E4159;
+  --ib-gold:    #E5B04B;
+  --ib-success: #2FB573;
+  --ib-warning: #E59A2B;
+  --ib-danger:  #D9523B;
+  --ib-danger-soft: rgba(217,82,59,0.14);
+  --ib-danger-border: rgba(217,82,59,0.28);
+
+  /* Surfaces — warm parchment */
+  --ib-bg:         #F7F5F1;
+  --ib-surface:    #FFFFFF;
+  --ib-surface-2:  #FAF8F4;
+  --ib-surface-3:  #EEEAE2;
+  --ib-text:       #17120C;
+  --ib-text-muted: #5C5244;
+  --ib-text-soft:  #8B7E6D;
+  --ib-border:     #E5DFD3;
+  --ib-border-2:   #CFC7B8;
+
+  /* Type */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+
+  /* Layout rhythm */
+  --ib-page-x: clamp(20px, 5vw, 64px);
+  --ib-section-y: clamp(56px, 9vw, 120px);
+  --ib-radius-sm: 10px;
+  --ib-radius-md: 16px;
+  --ib-radius-lg: 24px;
+
+  /* Shadows */
+  --ib-shadow-sm: 0 1px 2px rgba(23,18,12,0.04), 0 4px 12px rgba(23,18,12,0.04);
+  --ib-shadow-md: 0 6px 20px -8px rgba(23,18,12,0.18);
+  --ib-shadow-laptop: 0 40px 80px -24px rgba(23,18,12,0.22), 0 16px 40px -16px rgba(23,18,12,0.12);
+
+  /* Hero gradient */
+  --ib-landing-hero-bg: linear-gradient(160deg, var(--ib-bg) 0%, var(--ib-surface-2) 58%, var(--ib-primary-softer) 100%);
+}
+
+[data-ib-theme="dark"] {
+  --ib-bg:         #0B0C0E;
+  --ib-surface:    #14161A;
+  --ib-surface-2:  #1B1E23;
+  --ib-surface-3:  #24282F;
+  --ib-text:       #F2F4F7;
+  --ib-text-muted: #A6ADB8;
+  --ib-text-soft:  #6E7480;
+  --ib-border:     #262A31;
+  --ib-border-2:   #3A3F48;
+  --ib-shadow-sm:  0 1px 2px rgba(0,0,0,0.4);
+  --ib-shadow-md:  0 4px 16px rgba(0,0,0,0.5);
+  --ib-shadow-laptop: 0 40px 80px -24px rgba(0,0,0,0.6), 0 16px 40px -16px rgba(0,0,0,0.4);
+  --ib-landing-hero-bg: linear-gradient(160deg, #0B0C0E 0%, #14161A 58%, rgba(245,146,33,0.08) 100%);
+}
