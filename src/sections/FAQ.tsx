@@ -17,7 +17,7 @@ const ITEMS = [
   },
   {
     q: 'Where is my data stored?',
-    a: 'On our managed Firebase backend, encrypted at rest. We never sell data and we never use it to train models.',
+    a: 'On our managed database, encrypted at rest. We never sell data and we never use it to train models.',
   },
 ];
 
