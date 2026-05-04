@@ -195,8 +195,10 @@ function WaitlistInner({ preselectedRole, apiRef }: Props) {
     let dupe = false;
     try {
       if (!supabase) throw new Error('not-configured');
+      // No .select() — our RLS grants INSERT only, not SELECT. Asking for a
+      // RETURNING row would make PostgREST reject the request with 401.
       const result = await withTimeout(
-        Promise.resolve(supabase.from('waitlist').insert(payload).select('id')),
+        Promise.resolve(supabase.from('waitlist').insert(payload)),
         8000
       );
       if (result.error) {
